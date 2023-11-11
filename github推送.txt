@@ -1,0 +1,14 @@
+github推送步骤：注意大小不能超过100m.
+在包含所有要推送文件夹目录中，右击选择"Open Git Bash here",在弹出的命令行窗口中 如下操作：
+1.git init  //代码初始化
+2.ls        //查看文件目录下所有内容
+3.git status   //查看目录内容状态，未提交到暂存区为红色
+4.git add .   //提交内容只暂存区
+5.git status   //查看内容状态，提交之后为绿色
+6.git commit -m "first commit"  ///代码提交备注，可以中文
+7.git branch -M main  //从 2020 年 10 月 1 日开始，GitHub 上的所有新库都将用中性词「main」命名，取代原来的「master」，因为后者是一个容易让人联想到奴隶制的术语。
+8.git remote add origin https://github.com/账户名/仓库名.git    本例中为
+   git remote add origin https://github.com/liuweixing123/steps.git  或者
+   git remote add origin git@github.com:账户名/仓库名.git           本例中为
+   git  remote add  origin  git@github.com:liuweixing123/steps.git
+9.git push -u origin main   //推送命令
